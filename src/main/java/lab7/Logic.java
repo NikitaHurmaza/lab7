@@ -8,7 +8,6 @@ public class Logic {
         List<Book> books = new ArrayList<>();
         books.add(new Book("To Kill a Mockingbird", "Harper Lee", "J. B. Lippincott & Co.", 1960, 281, 9.99));
         books.add(new Book("Achu", "Harper Lee", "J. B. Lippincott & Co.", 1950, 221, 10.99));
-
         books.add(new Book("1984", "George Orwell", "Secker & Warburg", 1949, 328, 8.99));
         books.add(new Book("One Hundred Years of Solitude", "Gabriel García Márquez", "Editorial Sudamericana", 1967, 417, 12.99));
         books.add(new Book("The Catcher in the Rye", "J. D. Salinger", "Little, Brown and Company", 1951, 234, 7.99));
