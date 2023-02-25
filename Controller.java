@@ -136,7 +136,6 @@ public class Controller {
             if (success) {
                 List<Book> list = logic.fillList();
                 RemoveList.setText(String.valueOf(logic.remove(list, index)));
-                System.out.println("button clicked");
 
             }
         });
