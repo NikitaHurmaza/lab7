@@ -1,4 +1,4 @@
-package lab7;
+package lab7;d
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
