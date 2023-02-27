@@ -1,4 +1,4 @@
-package lab7;
+package lab7;d
 
 import java.util.*;
 
