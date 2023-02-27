@@ -79,16 +79,13 @@ public HashSet<String> getPublishers(List<Book>books) {
     }
 //для кожного видавництва визначити список книг, виданих ним
 public Map<String, List<Book>> getBooksByPublisherMap(List<Book>books) {
-    Map<String, List<Book>> booksByPublisher = new HashMap<>();
+  Map<String, List<Book>> booksByPublisher = new HashMap<>();
     for (Book book : books) {
         String publisher = book.getPublisher();
-        List<Book> publisherBooks = booksByPublisher.get(publisher);
-        if (publisherBooks == null) {
-            publisherBooks = new ArrayList<>();
-            booksByPublisher.put(publisher, publisherBooks);
+        if (!booksByPublisher.containsKey(publisher)) {
+            booksByPublisher.put(publisher, new ArrayList<Book>());
         }
-
-        publisherBooks.add(book);
+        booksByPublisher.get(publisher).add(book);
     }
     return booksByPublisher;
 }
